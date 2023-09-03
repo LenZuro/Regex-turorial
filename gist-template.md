@@ -9,3 +9,18 @@ This tutorial will be covering the regex expression used for both matching and v
 `^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$`
 
 Imagine your a software developer tasked with finding all emails within a code base that were being utilized in a non-secure way. Searching through the code base and other documents using the regular expression shown above would help find all emails extremely quickly. The regular expression shown above can also be implemented as a string within a code base as a way of matching and validating an email. Making sure that when users fill out certain forms requiring a valid email address, the regex string can be implemented in a way that will not allow the user to continue until they have entered an unspecified number of characters, followed by an @ symbol, followed by a domain name an unspecified number of characters long, followed by the domain name system (in this example the domain name system needs to be between 2 and 6 characters long i.e. .com, .net, .dev, etc.).
+
+## Table of Contents 
+
+
+
+
+## Regex Componets 
+
+The regex components that define this particular expression are anchors, quantifiers, meta escape characters, character classes, single character matches, grouping and capturing, and bracket expression. Regarding the example used in this tutorial: `^` and `$` are the anchors used, `+` and `{2, 6}` are the two quantifiers, `\d` represents the meta escape character utilized, `[a-z0-9_\.-]`, `[\da-z\.-]`, and `[a-z\.]` represent the character classes, `_`, `\.`, `-` represent the single character matches used, `()` represents the way this regex expression utilizes grouping and capturing, and `[]` delinates the bracket expression used.
+
+
+### Anchors 
+
+Anchors within regex mark the start and end points of the expression. In regards to this expression, the `^` marks the start of the expression and the `$` marks the end of the expression. 
+
